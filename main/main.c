@@ -74,6 +74,8 @@ int main() {
             sleep_ms(10);
             gpio_put(BOBINA_4, 0);
         }
+        gpio_put(LED_PIN, 0);
+
         estado_led = true;
     }
     else if(estado_led && !gpio_get(BTN_PIN)){
